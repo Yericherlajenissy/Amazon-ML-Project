@@ -117,7 +117,6 @@ Model Loading: The model is loaded with pre-trained weights using ResNet50(weigh
 Prediction Process: For each image, the predictor function downloads and preprocesses the image to make it compatible with ResNet50. It then uses the model to predict the class of the image and decodes the prediction into a human-readable format.
 The ResNet50 model is utilized here to demonstrate how pre-trained models can be applied to classify images and extract relevant information, although the specific mapping from model predictions to product entity values and units needs to be implemented based on the task's requirements.
 	
-Output:
 
 
 
