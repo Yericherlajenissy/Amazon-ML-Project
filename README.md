@@ -1,5 +1,7 @@
 # Amazon ML project
+
 they'll give you a dataset and ask us to implement a machine learning model.
+
 Data Description:
 The dataset consists of the following columns:
 index: A unique identifier (ID) for the data sample.
