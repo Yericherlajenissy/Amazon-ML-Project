@@ -1,4 +1,4 @@
-# Amazon ML Project.
+# Amazon ML Project 
 
 they'll give you a dataset and ask us to implement a machine learning model.
 
