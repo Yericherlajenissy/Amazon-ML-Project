@@ -19,6 +19,7 @@ The provided code snippet and dataset description pertain to a machine learning 
    - The script reads the `test.csv` file from the dataset, which contains image links, category IDs, and entity names.
    - For each row in the CSV, the `predictor` function is applied to generate predictions.
    - The predictions are then saved to a new CSV file (`test_out.csv`) along with the corresponding indices.
+     
 In the provided code, we utilized the ResNet50 model, a well-known convolutional neural network architecture pre-trained on the ImageNet dataset. ResNet50 is part of the ResNet (Residual Network) family, which introduced the concept of residual learning to address the problem of vanishing gradients in very deep networks. This architecture is renowned for its ability to train very deep networks effectively by incorporating skip (or residual) connections that allow gradients to flow more easily through the network.
 ResNet50 Architecture:
 Depth and Layers: ResNet50 consists of 50 layers deep, which include convolutional layers, batch normalization layers, and pooling layers. It employs a series of convolutional blocks organized into four stages, each with a varying number of residual blocks. These blocks facilitate the learning of residual mappings, which helps in mitigating the degradation problem associated with deeper networks.
