@@ -21,12 +21,14 @@ The provided code snippet and dataset description pertain to a machine learning 
    - The predictions are then saved to a new CSV file (`test_out.csv`) along with the corresponding indices.
      
 In the provided code, we utilized the ResNet50 model, a well-known convolutional neural network architecture pre-trained on the ImageNet dataset. ResNet50 is part of the ResNet (Residual Network) family, which introduced the concept of residual learning to address the problem of vanishing gradients in very deep networks. This architecture is renowned for its ability to train very deep networks effectively by incorporating skip (or residual) connections that allow gradients to flow more easily through the network.
+
 ResNet50 Architecture:
 Depth and Layers: ResNet50 consists of 50 layers deep, which include convolutional layers, batch normalization layers, and pooling layers. It employs a series of convolutional blocks organized into four stages, each with a varying number of residual blocks. These blocks facilitate the learning of residual mappings, which helps in mitigating the degradation problem associated with deeper networks.
 Residual Blocks: Each residual block includes skip connections that bypass one or more layers, allowing the network to learn the residual function rather than the direct mapping. This architecture helps in reducing training time and improving model performance, especially in deep networks.
 Pre-training on ImageNet: The model was pre-trained on the ImageNet dataset, which consists of millions of labeled images across a thousand different classes. This pre-training allows the model to capture a wide range of visual features and generalize well to various image classification tasks.
 Input Size: ResNet50 expects input images of size 224x224 pixels. The download_and_preprocess_image function in the code resizes images to this dimension to match the model’s input requirements.
 Output Layer and Predictions: The final layer of ResNet50 is a dense layer with softmax activation, providing probabilities for each of the 1000 classes in ImageNet. The decode_predictions function translates these probabilities into human-readable labels and is used to interpret the model’s output.
+
 Usage in the Code:
 Model Loading: The model is loaded with pre-trained weights using ResNet50(weights='imagenet'), enabling it to leverage the learned features from ImageNet for classification tasks.
 Prediction Process: For each image, the predictor function downloads and preprocesses the image to make it compatible with ResNet50. It then uses the model to predict the class of the image and decodes the prediction into a human-readable format.
